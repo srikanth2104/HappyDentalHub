@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Happy Dental Hub - Schedule your dental appointment">
+    <meta name="keywords" content="dental contact, appointment, booking, dental clinic">
+    <title>Contact Us - Happy Dental Hub</title>
+    <link rel="stylesheet" href="H1.css">
+    <style>
+        .service-card{
+            transition:transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover{
+            transform:translateY(-16px);
+            box-shadow:0 12px 24px rgba(0,0,10,10,15);
+        }
+        .contact-hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+            border-radius: var(--border-radius);
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .contact-info-card {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .contact-form {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: var(--white);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            transform: translateY(-2px);
+        }
+        
+        .contact-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        
+        .emergency-banner {
+            background: linear-gradient(135deg, var(--error-red), #fc8181);
+            color: white;
+            border-radius: var(--border-radius);
+            text-align: center;
+            margin: 0;
+        }
+        
+        .map-container {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            margin: 2rem 0;
+        }
+        h1:hover{
+            color:forestgreen;
+            transform:all 0.3s ease;
+        }
+        h2:hover{
+            color:palevioletred;
+            transform:all 0.3s ease;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+         .marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+    color:#2c7a7b;
+  display: inline-block;
+  animation: scroll 5s linear infinite;
+}
+
+@keyframes scroll {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" style="background-color: white;">
+        <div class="container">
+            <div class="header-content">
+                <a href="Happy.html" class="logo" style="color: #2c7a7b;font-size: 40px">🦷 Happy Dental Hub</a>
+                <div class="contact-info">
+                    <div class="phone" style="color:#2c7a7b;font-size: 24px">📞8019195811</div>
+                    <div class="marquee">
+                    <div class="marquee-content">🕘 9:00 AM - 5:00 PM</div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="Happy.html" class="nav-link">🏠 Home</a></li>
+                <li><a href="services.html" class="nav-link">🩺 Services</a></li>
+                <li><a href="braces.html" target="_blank" class="nav-link">🦷 Braces</a></li>
+                <li><a href="Root.html" class="nav-link">✨RootCanal</a></li>
+                <li><a href="contact.html" class="nav-link active">📧 Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <main class="content">
+            <section class="contact-hero fade-in">
+                <h1 id="contitle">📧 Contact Us</h1>
+                <p class="lead">Schedule your appointment today and take the first step towards a healthier smile!</p>
+            </section>
+
+            <section class="emergency-banner">
+                <h2>🚨 Dental Emergency?</h2>
+                <p>Call us immediately for urgent dental care. We're here to help when you need us most!</p>
+            </section>
+
+            <div class="contact-grid">
+    
+                <section class="contact-info-card">
+                    <h2>📍 Get in Touch</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>123-456-7890</p>
+                            <p>Available during business hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@happydentalhub.com</p>
+                            <p>We respond within 24 hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🕘</div>
+                        <div>
+                            <h3>Working Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                            <p>Saturday: 9:00 AM - 2:00 PM</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Address</h3>
+                            <p>11-567,</p>
+                            <p>Ramachandrapuram,A.Konduru</p>
+                            <p>NTR District,AP</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact-form">
+                    <h2>📝 Book Appointment</h2>
+                    <p>Fill out the form below and we'll get back to you to confirm your appointment.</p>
+                    
+                    <form id="appointmentForm" action="bookAppointment" method="post">
+                    <input type="hidden" id="doctor" name="doctor">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Type *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="general">General Checkup</option>
+                                <option value="cleaning">Teeth Cleaning</option>
+                                <option value="braces">Braces Consultation</option>
+                                <option value="cosmetic">Cosmetic Dentistry</option>
+                                <option value="emergency">Emergency Care</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Preferred Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="time">Preferred Time *</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select a time</option>
+                                <option value="9:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Additional Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your dental concerns or ask any questions..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn" style="width: 90%;">📅 Book Appointment</button>
+                    </form>
+                </section>
+            </div>
+
+            <!-- Map Section -->
+            <section class="map-container">
+                <h2>🗺️ Find Us</h2>
+                <p>Conveniently located in the heart of Dental City with easy parking and accessibility.</p>
+                <iframe
+                   src="https://maps.google.com/maps?q=A.Konduru,+NTR+District,+Andhra+Pradesh&output=embed"
+                   width="100%" height="350" style="border:0; border-radius:12px;"allowfullscreen loading="lazy">
+                </iframe>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="mt-2">
+                <h2>❓ Frequently Asked Questions</h2>
+                
+                <div class="service-grid">
+                    <div class="service-card">
+                        <h3>How far in advance should I book?</h3>
+                        <p>We recommend booking 1-2 weeks in advance for routine appointments. Emergency cases are accommodated same-day.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h3>Do you accept insurance?</h3>
+                        <p>Yes, we accept most major dental insurance plans. Call us to verify your coverage before your visit.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h3>What payment methods do you accept?</h3>
+                        <p>We accept cash, credit cards, and offer flexible payment plans for larger treatments.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h3>Can I cancel or reschedule?</h3>
+                        <p>Yes, please provide at least 24 hours notice for cancellations to avoid any fees.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 Happy Dental Hub. All rights reserved. | 🦷 Live long life with small smile</p>
+        </div>
+    </footer>
+    <!-- ===== POPUP STYLE ===== -->
+<style>
+  .popup-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);
+    justify-content:center;align-items:center;z-index:9999;}
+  .popup-box{background:#fff;border-radius:14px;padding:28px;max-width:420px;width:90%;
+    text-align:center;font-family:Arial,sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.3);}
+  .popup-box h2{margin:10px 0;}
+  .popup-box ul{text-align:left;margin:10px 0 0 20px;}
+  .popup-box button{margin-top:18px;padding:10px 30px;border:none;border-radius:8px;
+    background:#2a7f7f;color:#fff;font-size:16px;cursor:pointer;}
+  .popup-success h2{color:#1b8a4b;}
+  .popup-error h2{color:#c0392b;}
+</style>
+
+<!-- ===== POPUP BOX ===== -->
+<div id="popupOverlay" class="popup-overlay">
+  <div class="popup-box" id="popupBox">
+    <div id="popupIcon" style="font-size:48px;"></div>
+    <h2 id="popupTitle"></h2>
+    <div id="popupBody"></div>
+    <button type="button" id="popupBtn">OK</button>
+  </div>
+</div>
+
+<!-- ===== SCRIPT ===== -->
+<script>
+  // EDIT THE DOCTOR NAMES on the right side.
+  // The left side is a keyword found in the treatment name.
+  const doctors = {
+    "root": "Dr. Ramesh",
+    "brace": "Dr. Sravani",
+    "whiten": "Dr. Kiran",
+    "crown": "Dr. Anil",
+    "implant": "Dr. Anil",
+    "check": "Dr. Lakshmi",
+    "clean": "Dr. Lakshmi"
+  };
+  const defaultDoctor = "Dr. Lakshmi";
+
+  const form = document.querySelector("form");
+  let bookingOk = false;
+
+  // finds a field by id first, then by name
+  function field(...names) {
+    for (const n of names) {
+      const el = document.getElementById(n) || form.elements[n];
+      if (el) return el;
+    }
+    console.warn("Field not found. Tried: " + names.join(", "));
+    return { value: "" };
+  }
+
+  function findDoctor(treatment) {
+    const t = treatment.toLowerCase();
+    for (const key in doctors) {
+      if (t.includes(key)) return doctors[key];
+    }
+    return defaultDoctor;
+  }
+
+  function showPopup(type, icon, title, bodyHtml) {
+    document.getElementById("popupBox").className =
+      "popup-box " + (type === "success" ? "popup-success" : "popup-error");
+    document.getElementById("popupIcon").textContent = icon;
+    document.getElementById("popupTitle").textContent = title;
+    document.getElementById("popupBody").innerHTML = bodyHtml;
+    document.getElementById("popupOverlay").style.display = "flex";
+  }
+
+  // After a valid booking, clicking OK sends the form to the servlet (saves to Oracle)
+  document.getElementById("popupBtn").onclick = function () {
+    document.getElementById("popupOverlay").style.display = "none";
+    if (bookingOk) {
+      bookingOk = false;
+      form.submit();
+    }
+  };
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name      = field("name", "fullName", "fullname", "full_name", "patientName").value.trim();
+    const phone     = field("phone", "mobile", "phoneNumber").value.trim();
+    const email     = field("email").value.trim();
+    const treatment = field("treatment", "service", "serviceType", "service_type").value.trim();
+    const date      = field("date", "preferredDate", "appointmentDate").value;
+    const time      = field("time", "preferredTime", "appointmentTime").value;
+
+    const errors = [];
+
+    if (name === "")
+      errors.push("Name is empty. Please enter your name.");
+    else if (!/^[A-Za-z]+(\s[A-Za-z]+)*$/.test(name))
+      errors.push("Name can contain only letters and single spaces (no numbers or symbols).");
+
+    if (!/^[6-9]\d{9}$/.test(phone))
+      errors.push("Phone number must be 10 digits and start with 6, 7, 8 or 9.");
+
+    if (email !== "" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
+      errors.push("Email is not valid (example: name@gmail.com).");
+
+    if (treatment === "" || treatment.toLowerCase().startsWith("select"))
+      errors.push("Please select a treatment.");
+
+    if (date === "") {
+      errors.push("Please choose an appointment date.");
+    } else {
+      const chosen = new Date(date + "T00:00:00");
+      const today = new Date(); today.setHours(0, 0, 0, 0);
+      if (chosen < today)
+        errors.push("The date is in the past. Please choose today or a future date.");
+      else if (chosen.getDay() === 0)
+        errors.push("The clinic is closed on Sunday. Please choose another day.");
+    }
+
+    if (time === "" || time.toLowerCase().startsWith("select"))
+      errors.push("Please select a preferred time.");
+
+    if (errors.length > 0) {
+      showPopup("error", "❌", "Appointment Not Booked",
+        "<p>Please fix these mistakes:</p><ul><li>" + errors.join("</li><li>") + "</li></ul>");
+      return;
+    }
+
+    const prettyDate = new Date(date + "T00:00:00").toLocaleDateString("en-IN",
+      { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+
+    document.getElementById("doctor").value = findDoctor(treatment);
+    bookingOk = true;
+    showPopup("success", "✅", "Appointment Booked!",
+      "<p>Thank you, <b>" + name + "</b>.</p>" +
+      "<p><b>Treatment:</b> " + document.getElementById("service").selectedOptions[0].text + "<br>" +
+      "<b>Doctor:</b> " + findDoctor(treatment) + "<br>" +
+      "<b>Date:</b> " + prettyDate + "<br>" +
+      "<b>Time:</b> " + document.getElementById("time").selectedOptions[0].text + "</p>");
+  });
+  // If the servlet rejected the booking, show its message
+   const params = new URLSearchParams(window.location.search);
+  const st = params.get("status");
+
+  if (st === "success") {
+    showPopup("success", "✅", "Appointment Saved!",
+      "<p>Your appointment has been saved successfully.</p>" +
+      "<p>We will contact you to confirm it.</p>");
+  } else if (st === "error") {
+    showPopup("error", "❌", "Appointment Not Saved",
+      "<p>" + params.get("msg") + "</p>");
+  }
+
+  // remove ?status=... from the address bar so a page refresh doesn't show the popup again
+  if (st) {
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
+</script>
+<script src="auth.js"></script>
+</body>
+</html>

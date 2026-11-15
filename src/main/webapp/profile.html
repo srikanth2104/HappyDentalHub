@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Happy Dental Hub</title>
+    <link rel="stylesheet" href="H1.css">
+    <style>
+        .auth-wrap { max-width: 460px; margin: 2rem auto; }
+        .auth-card {
+            background: var(--white, #fff);
+            padding: 2rem;
+            border-radius: var(--border-radius, 12px);
+            box-shadow: var(--shadow, 0 4px 12px rgba(0,0,0,.1));
+        }
+        .auth-card h2 { text-align: center; color: #2c7a7b; margin-bottom: 1.5rem; }
+        .profile-row { padding: 12px 0; border-bottom: 1px solid #e2e8f0; }
+        .profile-row span { display: block; font-size: .85rem; color: #718096; }
+        .profile-row b { font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+    <header class="header" style="background-color: white;">
+        <div class="container">
+            <div class="header-content">
+                <a href="Happy.html" class="logo" style="color: #2c7a7b;font-size: 40px">🦷 Happy Dental Hub</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="Happy.html" class="nav-link">🏠 Home</a></li>
+                <li><a href="services.html" class="nav-link">🩺 Services</a></li>
+                <li><a href="braces.html" class="nav-link">🦷 Braces</a></li>
+                <li><a href="Root.html" class="nav-link">✨RootCanal</a></li>
+                <li><a href="contact.html" class="nav-link">📧 Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <main class="content">
+            <div class="auth-wrap">
+                <section class="auth-card">
+                    <h2>👤 My Profile</h2>
+                    <div class="profile-row"><span>Full Name</span><b id="pName">...</b></div>
+                    <div class="profile-row"><span>Email</span><b id="pEmail">...</b></div>
+                    <div class="profile-row"><span>Phone</span><b id="pPhone">...</b></div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 Happy Dental Hub. All rights reserved. | 🦷 Live long life with small smile</p>
+        </div>
+    </footer>
+
+<script src="auth.js"></script>
+<script>
+    fetch("authStatus", { credentials: "same-origin", cache: "no-store" })
+        .then(r => r.json())
+        .then(s => {
+            if (!s.loggedIn) { window.location.href = "login.html?next=profile.html"; return; }
+            document.getElementById("pName").textContent = s.name;
+            document.getElementById("pEmail").textContent = s.email;
+            document.getElementById("pPhone").textContent = s.phone;
+        });
+</script>
+</body>
+</html>

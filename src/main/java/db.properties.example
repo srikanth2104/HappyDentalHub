@@ -1,0 +1,7 @@
+# Copy this file to db.properties in the same directory.
+# Replace the placeholders with your LOCAL Oracle database settings.
+# Never commit db.properties or real credentials to a public repository.
+
+db.url=jdbc:oracle:thin:@//localhost:1521/XE
+db.user=YOUR_ORACLE_APP_USERNAME
+db.password=YOUR_ORACLE_APP_PASSWORD

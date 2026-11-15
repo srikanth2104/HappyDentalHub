@@ -1,0 +1,18 @@
+# Java / Eclipse build output
+**/build/
+**/target/
+**/*.class
+**/*.war
+
+# Local database configuration and secrets
+**/db.properties
+**/.env
+**/.env.*
+
+# Local IDE / OS files
+.metadata/
+**/.DS_Store
+**/Thumbs.db
+
+# Local Oracle JDBC driver (obtain separately; check Oracle licensing)
+**/ojdbc*.jar
